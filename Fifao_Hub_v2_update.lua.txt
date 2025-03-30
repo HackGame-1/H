@@ -13,7 +13,16 @@ local Window = Fluent:CreateWindow({
     Theme = "Darker",
     MinimizeKey = Enum.KeyCode.End -- Used when theres no MinimizeKeybind
 })
-local Tabs = {
+
+       MinimizeButton({
+       Image = "http://www.roblox.com/asset/?id=83190276951914",
+       Size = {60, 60},
+       Color = Color3.fromRGB(10, 10, 10),
+       Corner = true,
+       Stroke = false,
+       StrokeColor = Color3.fromRGB(255, 0, 0)
+})
+       local Tabs = {
     Main = Window:AddTab({ Title = "Main Farm", Icon = "home" }),
     Setting = Window:AddTab({ Title = "Setting Farming", Icon = "settings" }),
     Stats = Window:AddTab({ Title = "Stats", Icon = "plus-circle" }),
